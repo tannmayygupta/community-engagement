@@ -14,7 +14,7 @@ function App() {
       if (firebaseUser) {
         const token = await firebaseUser.getIdToken();
         localStorage.setItem('token', token);
-        try {
+        try { 
           const response = await api.post('/users');
           setUser(response.data);
         } catch (err) {
