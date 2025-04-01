@@ -1,0 +1,802 @@
+[
+    {
+        "id": 1,
+        "name": "AI/ML Workshop 2026",
+        "venue": "Zoom (Online)",
+        "time": "04:06 PM, 16 April 2025",
+        "entryFee": "Free",
+        "type": "Team"
+    },
+    {
+        "id": 2,
+        "name": "AR/VR Hackathon 2027",
+        "venue": "Google Meet",
+        "time": "04:06 PM, 07 January 2026",
+        "entryFee": "Free",
+        "type": "Solo"
+    },
+    {
+        "id": 3,
+        "name": "Cloud Conference 2026",
+        "venue": "Open Ground, RCOEM",
+        "time": "04:06 PM, 07 April 2025",
+        "entryFee": "\u20b9100",
+        "type": "Solo"
+    },
+    {
+        "id": 4,
+        "name": "Blockchain Basics 2026",
+        "venue": "Google Meet",
+        "time": "04:06 PM, 22 August 2025",
+        "entryFee": "\u20b9300",
+        "type": "Team"
+    },
+    {
+        "id": 5,
+        "name": "Blockchain Basics 2027",
+        "venue": "Microsoft Teams",
+        "time": "04:06 PM, 20 November 2025",
+        "entryFee": "\u20b9100",
+        "type": "Team"
+    },
+    {
+        "id": 6,
+        "name": "UI/UX Design Workshop 2025",
+        "venue": "Innovation Hub",
+        "time": "04:06 PM, 21 June 2025",
+        "entryFee": "\u20b9200",
+        "type": "Solo"
+    },
+    {
+        "id": 7,
+        "name": "IoT Innovation Challenge 2025",
+        "venue": "RCOEM Auditorium",
+        "time": "04:06 PM, 02 August 2025",
+        "entryFee": "Free",
+        "type": "Solo"
+    },
+    {
+        "id": 8,
+        "name": "Web Dev Bootcamp 2026",
+        "venue": "Seminar Hall",
+        "time": "04:06 PM, 30 November 2025",
+        "entryFee": "\u20b9200",
+        "type": "Solo"
+    },
+    {
+        "id": 9,
+        "name": "Data Science Masterclass 2025",
+        "venue": "RCOEM Auditorium",
+        "time": "04:06 PM, 22 May 2025",
+        "entryFee": "\u20b9100",
+        "type": "Team"
+    },
+    {
+        "id": 10,
+        "name": "Cloud Conference 2025",
+        "venue": "Auditorium Hall",
+        "time": "04:06 PM, 20 November 2025",
+        "entryFee": "\u20b9300",
+        "type": "Solo"
+    },
+    {
+        "id": 11,
+        "name": "IoT Innovation Challenge 2025",
+        "venue": "Innovation Hub",
+        "time": "04:06 PM, 24 April 2025",
+        "entryFee": "\u20b9100",
+        "type": "Team"
+    },
+    {
+        "id": 12,
+        "name": "Data Science Masterclass 2026",
+        "venue": "RCOEM Auditorium",
+        "time": "04:06 PM, 27 February 2026",
+        "entryFee": "Free",
+        "type": "Solo"
+    },
+    {
+        "id": 13,
+        "name": "AI/ML Workshop 2027",
+        "venue": "Open Ground, RCOEM",
+        "time": "04:06 PM, 06 December 2025",
+        "entryFee": "\u20b9300",
+        "type": "Team"
+    },
+    {
+        "id": 14,
+        "name": "Hackathon 2027",
+        "venue": "Innovation Hub",
+        "time": "04:06 PM, 20 December 2025",
+        "entryFee": "\u20b9300",
+        "type": "Solo"
+    },
+    {
+        "id": 15,
+        "name": "AR/VR Hackathon 2027",
+        "venue": "RCOEM Library",
+        "time": "04:06 PM, 15 February 2026",
+        "entryFee": "\u20b9100",
+        "type": "Team"
+    },
+    {
+        "id": 16,
+        "name": "Data Science Masterclass 2025",
+        "venue": "Zoom (Online)",
+        "time": "04:06 PM, 28 June 2025",
+        "entryFee": "\u20b9200",
+        "type": "Team"
+    },
+    {
+        "id": 17,
+        "name": "AI/ML Workshop 2027",
+        "venue": "Zoom (Online)",
+        "time": "04:06 PM, 23 October 2025",
+        "entryFee": "\u20b9300",
+        "type": "Solo"
+    },
+    {
+        "id": 18,
+        "name": "Blockchain Basics 2026",
+        "venue": "Seminar Hall",
+        "time": "04:06 PM, 21 January 2026",
+        "entryFee": "\u20b9200",
+        "type": "Solo"
+    },
+    {
+        "id": 19,
+        "name": "Cloud Conference 2026",
+        "venue": "Open Ground, RCOEM",
+        "time": "04:06 PM, 08 March 2026",
+        "entryFee": "Free",
+        "type": "Team"
+    },
+    {
+        "id": 20,
+        "name": "Web Dev Bootcamp 2027",
+        "venue": "RCOEM Auditorium",
+        "time": "04:06 PM, 16 April 2025",
+        "entryFee": "Free",
+        "type": "Team"
+    },
+    {
+        "id": 21,
+        "name": "Blockchain Basics 2027",
+        "venue": "Auditorium Hall",
+        "time": "04:06 PM, 07 July 2025",
+        "entryFee": "\u20b9200",
+        "type": "Solo"
+    },
+    {
+        "id": 22,
+        "name": "AR/VR Hackathon 2026",
+        "venue": "Innovation Hub",
+        "time": "04:06 PM, 05 September 2025",
+        "entryFee": "Free",
+        "type": "Team"
+    },
+    {
+        "id": 23,
+        "name": "AI/ML Workshop 2027",
+        "venue": "Seminar Hall",
+        "time": "04:06 PM, 11 October 2025",
+        "entryFee": "Free",
+        "type": "Team"
+    },
+    {
+        "id": 24,
+        "name": "Cloud Conference 2026",
+        "venue": "RCOEM Library",
+        "time": "04:06 PM, 30 July 2025",
+        "entryFee": "Free",
+        "type": "Team"
+    },
+    {
+        "id": 25,
+        "name": "Cybersecurity Seminar 2027",
+        "venue": "Innovation Hub",
+        "time": "04:06 PM, 08 September 2025",
+        "entryFee": "Free",
+        "type": "Solo"
+    },
+    {
+        "id": 26,
+        "name": "Cloud Conference 2026",
+        "venue": "Innovation Hub",
+        "time": "04:06 PM, 16 December 2025",
+        "entryFee": "\u20b9200",
+        "type": "Team"
+    },
+    {
+        "id": 27,
+        "name": "AR/VR Hackathon 2025",
+        "venue": "Innovation Hub",
+        "time": "04:06 PM, 21 November 2025",
+        "entryFee": "\u20b9100",
+        "type": "Solo"
+    },
+    {
+        "id": 28,
+        "name": "Blockchain Basics 2025",
+        "venue": "Seminar Hall",
+        "time": "04:06 PM, 13 June 2025",
+        "entryFee": "Free",
+        "type": "Solo"
+    },
+    {
+        "id": 29,
+        "name": "UI/UX Design Workshop 2027",
+        "venue": "Zoom (Online)",
+        "time": "04:06 PM, 05 December 2025",
+        "entryFee": "\u20b9300",
+        "type": "Team"
+    },
+    {
+        "id": 30,
+        "name": "UI/UX Design Workshop 2026",
+        "venue": "RCOEM Library",
+        "time": "04:06 PM, 03 July 2025",
+        "entryFee": "\u20b9200",
+        "type": "Team"
+    },
+    {
+        "id": 31,
+        "name": "Data Science Masterclass 2026",
+        "venue": "Open Ground, RCOEM",
+        "time": "04:06 PM, 09 November 2025",
+        "entryFee": "\u20b9200",
+        "type": "Solo"
+    },
+    {
+        "id": 32,
+        "name": "Hackathon 2026",
+        "venue": "Seminar Hall",
+        "time": "04:06 PM, 30 March 2026",
+        "entryFee": "\u20b9300",
+        "type": "Solo"
+    },
+    {
+        "id": 33,
+        "name": "Cloud Conference 2027",
+        "venue": "Innovation Hub",
+        "time": "04:06 PM, 15 April 2025",
+        "entryFee": "Free",
+        "type": "Team"
+    },
+    {
+        "id": 34,
+        "name": "Web Dev Bootcamp 2027",
+        "venue": "Open Ground, RCOEM",
+        "time": "04:06 PM, 14 October 2025",
+        "entryFee": "\u20b9200",
+        "type": "Solo"
+    },
+    {
+        "id": 35,
+        "name": "Hackathon 2026",
+        "venue": "Seminar Hall",
+        "time": "04:06 PM, 01 May 2025",
+        "entryFee": "\u20b9100",
+        "type": "Team"
+    },
+    {
+        "id": 36,
+        "name": "AR/VR Hackathon 2026",
+        "venue": "Zoom (Online)",
+        "time": "04:06 PM, 31 January 2026",
+        "entryFee": "Free",
+        "type": "Team"
+    },
+    {
+        "id": 37,
+        "name": "Hackathon 2026",
+        "venue": "Lab 5, CS Dept.",
+        "time": "04:06 PM, 28 March 2026",
+        "entryFee": "\u20b9100",
+        "type": "Solo"
+    },
+    {
+        "id": 38,
+        "name": "Cybersecurity Seminar 2027",
+        "venue": "Google Meet",
+        "time": "04:06 PM, 08 December 2025",
+        "entryFee": "\u20b9300",
+        "type": "Team"
+    },
+    {
+        "id": 39,
+        "name": "Cybersecurity Seminar 2025",
+        "venue": "Microsoft Teams",
+        "time": "04:06 PM, 27 March 2026",
+        "entryFee": "\u20b9300",
+        "type": "Solo"
+    },
+    {
+        "id": 40,
+        "name": "Blockchain Basics 2025",
+        "venue": "RCOEM Auditorium",
+        "time": "04:06 PM, 20 December 2025",
+        "entryFee": "\u20b9100",
+        "type": "Solo"
+    },
+    {
+        "id": 41,
+        "name": "IoT Innovation Challenge 2026",
+        "venue": "Microsoft Teams",
+        "time": "04:06 PM, 10 June 2025",
+        "entryFee": "Free",
+        "type": "Team"
+    },
+    {
+        "id": 42,
+        "name": "Hackathon 2025",
+        "venue": "Open Ground, RCOEM",
+        "time": "04:06 PM, 18 July 2025",
+        "entryFee": "\u20b9200",
+        "type": "Team"
+    },
+    {
+        "id": 43,
+        "name": "IoT Innovation Challenge 2025",
+        "venue": "Auditorium Hall",
+        "time": "04:06 PM, 15 February 2026",
+        "entryFee": "Free",
+        "type": "Team"
+    },
+    {
+        "id": 44,
+        "name": "IoT Innovation Challenge 2026",
+        "venue": "Microsoft Teams",
+        "time": "04:06 PM, 09 January 2026",
+        "entryFee": "Free",
+        "type": "Solo"
+    },
+    {
+        "id": 45,
+        "name": "Cybersecurity Seminar 2026",
+        "venue": "RCOEM Auditorium",
+        "time": "04:06 PM, 01 June 2025",
+        "entryFee": "Free",
+        "type": "Solo"
+    },
+    {
+        "id": 46,
+        "name": "AI/ML Workshop 2027",
+        "venue": "Microsoft Teams",
+        "time": "04:06 PM, 05 August 2025",
+        "entryFee": "\u20b9200",
+        "type": "Solo"
+    },
+    {
+        "id": 47,
+        "name": "Hackathon 2027",
+        "venue": "Auditorium Hall",
+        "time": "04:06 PM, 08 January 2026",
+        "entryFee": "Free",
+        "type": "Solo"
+    },
+    {
+        "id": 48,
+        "name": "Data Science Masterclass 2025",
+        "venue": "RCOEM Auditorium",
+        "time": "04:06 PM, 28 May 2025",
+        "entryFee": "Free",
+        "type": "Team"
+    },
+    {
+        "id": 49,
+        "name": "Hackathon 2027",
+        "venue": "Innovation Hub",
+        "time": "04:06 PM, 24 June 2025",
+        "entryFee": "Free",
+        "type": "Solo"
+    },
+    {
+        "id": 50,
+        "name": "AI/ML Workshop 2025",
+        "venue": "Seminar Hall",
+        "time": "04:06 PM, 23 January 2026",
+        "entryFee": "\u20b9200",
+        "type": "Team"
+    },
+    {
+        "id": 51,
+        "name": "Cybersecurity Seminar 2025",
+        "venue": "RCOEM Library",
+        "time": "04:06 PM, 04 December 2025",
+        "entryFee": "\u20b9200",
+        "type": "Solo"
+    },
+    {
+        "id": 52,
+        "name": "Cybersecurity Seminar 2025",
+        "venue": "Open Ground, RCOEM",
+        "time": "04:06 PM, 03 August 2025",
+        "entryFee": "\u20b9300",
+        "type": "Team"
+    },
+    {
+        "id": 53,
+        "name": "AR/VR Hackathon 2026",
+        "venue": "Lab 5, CS Dept.",
+        "time": "04:06 PM, 20 September 2025",
+        "entryFee": "\u20b9100",
+        "type": "Solo"
+    },
+    {
+        "id": 54,
+        "name": "Hackathon 2025",
+        "venue": "Zoom (Online)",
+        "time": "04:06 PM, 08 April 2025",
+        "entryFee": "Free",
+        "type": "Team"
+    },
+    {
+        "id": 55,
+        "name": "IoT Innovation Challenge 2027",
+        "venue": "Google Meet",
+        "time": "04:06 PM, 18 October 2025",
+        "entryFee": "\u20b9100",
+        "type": "Team"
+    },
+    {
+        "id": 56,
+        "name": "Cybersecurity Seminar 2025",
+        "venue": "RCOEM Library",
+        "time": "04:06 PM, 07 November 2025",
+        "entryFee": "\u20b9100",
+        "type": "Team"
+    },
+    {
+        "id": 57,
+        "name": "Web Dev Bootcamp 2027",
+        "venue": "Seminar Hall",
+        "time": "04:06 PM, 26 July 2025",
+        "entryFee": "\u20b9200",
+        "type": "Solo"
+    },
+    {
+        "id": 58,
+        "name": "Cloud Conference 2025",
+        "venue": "RCOEM Auditorium",
+        "time": "04:06 PM, 18 October 2025",
+        "entryFee": "Free",
+        "type": "Team"
+    },
+    {
+        "id": 59,
+        "name": "UI/UX Design Workshop 2027",
+        "venue": "Open Ground, RCOEM",
+        "time": "04:06 PM, 24 July 2025",
+        "entryFee": "\u20b9100",
+        "type": "Solo"
+    },
+    {
+        "id": 60,
+        "name": "IoT Innovation Challenge 2025",
+        "venue": "RCOEM Auditorium",
+        "time": "04:06 PM, 09 May 2025",
+        "entryFee": "Free",
+        "type": "Solo"
+    },
+    {
+        "id": 61,
+        "name": "Cloud Conference 2026",
+        "venue": "Lab 5, CS Dept.",
+        "time": "04:06 PM, 02 December 2025",
+        "entryFee": "\u20b9200",
+        "type": "Team"
+    },
+    {
+        "id": 62,
+        "name": "IoT Innovation Challenge 2027",
+        "venue": "Zoom (Online)",
+        "time": "04:06 PM, 26 March 2026",
+        "entryFee": "Free",
+        "type": "Team"
+    },
+    {
+        "id": 63,
+        "name": "AR/VR Hackathon 2025",
+        "venue": "RCOEM Library",
+        "time": "04:06 PM, 05 December 2025",
+        "entryFee": "\u20b9200",
+        "type": "Team"
+    },
+    {
+        "id": 64,
+        "name": "UI/UX Design Workshop 2025",
+        "venue": "RCOEM Auditorium",
+        "time": "04:06 PM, 28 December 2025",
+        "entryFee": "\u20b9300",
+        "type": "Solo"
+    },
+    {
+        "id": 65,
+        "name": "AI/ML Workshop 2026",
+        "venue": "Zoom (Online)",
+        "time": "04:06 PM, 17 August 2025",
+        "entryFee": "Free",
+        "type": "Solo"
+    },
+    {
+        "id": 66,
+        "name": "Web Dev Bootcamp 2025",
+        "venue": "Microsoft Teams",
+        "time": "04:06 PM, 15 October 2025",
+        "entryFee": "\u20b9200",
+        "type": "Solo"
+    },
+    {
+        "id": 67,
+        "name": "Web Dev Bootcamp 2025",
+        "venue": "RCOEM Library",
+        "time": "04:06 PM, 02 February 2026",
+        "entryFee": "\u20b9100",
+        "type": "Team"
+    },
+    {
+        "id": 68,
+        "name": "Cloud Conference 2027",
+        "venue": "Seminar Hall",
+        "time": "04:06 PM, 08 October 2025",
+        "entryFee": "\u20b9100",
+        "type": "Solo"
+    },
+    {
+        "id": 69,
+        "name": "Cloud Conference 2026",
+        "venue": "Seminar Hall",
+        "time": "04:06 PM, 26 March 2026",
+        "entryFee": "\u20b9200",
+        "type": "Team"
+    },
+    {
+        "id": 70,
+        "name": "Cloud Conference 2027",
+        "venue": "RCOEM Library",
+        "time": "04:06 PM, 26 June 2025",
+        "entryFee": "\u20b9200",
+        "type": "Team"
+    },
+    {
+        "id": 71,
+        "name": "IoT Innovation Challenge 2026",
+        "venue": "RCOEM Auditorium",
+        "time": "04:06 PM, 30 November 2025",
+        "entryFee": "\u20b9200",
+        "type": "Team"
+    },
+    {
+        "id": 72,
+        "name": "Hackathon 2025",
+        "venue": "Open Ground, RCOEM",
+        "time": "04:06 PM, 26 September 2025",
+        "entryFee": "\u20b9300",
+        "type": "Team"
+    },
+    {
+        "id": 73,
+        "name": "AR/VR Hackathon 2026",
+        "venue": "Lab 5, CS Dept.",
+        "time": "04:06 PM, 18 December 2025",
+        "entryFee": "\u20b9100",
+        "type": "Team"
+    },
+    {
+        "id": 74,
+        "name": "Cloud Conference 2027",
+        "venue": "Open Ground, RCOEM",
+        "time": "04:06 PM, 26 April 2025",
+        "entryFee": "Free",
+        "type": "Team"
+    },
+    {
+        "id": 75,
+        "name": "AR/VR Hackathon 2025",
+        "venue": "Open Ground, RCOEM",
+        "time": "04:06 PM, 14 October 2025",
+        "entryFee": "\u20b9100",
+        "type": "Team"
+    },
+    {
+        "id": 76,
+        "name": "Web Dev Bootcamp 2027",
+        "venue": "Auditorium Hall",
+        "time": "04:06 PM, 25 December 2025",
+        "entryFee": "\u20b9300",
+        "type": "Solo"
+    },
+    {
+        "id": 77,
+        "name": "UI/UX Design Workshop 2025",
+        "venue": "RCOEM Auditorium",
+        "time": "04:06 PM, 14 October 2025",
+        "entryFee": "\u20b9100",
+        "type": "Solo"
+    },
+    {
+        "id": 78,
+        "name": "Hackathon 2026",
+        "venue": "Open Ground, RCOEM",
+        "time": "04:06 PM, 26 October 2025",
+        "entryFee": "\u20b9200",
+        "type": "Team"
+    },
+    {
+        "id": 79,
+        "name": "Hackathon 2026",
+        "venue": "Zoom (Online)",
+        "time": "04:06 PM, 12 December 2025",
+        "entryFee": "\u20b9300",
+        "type": "Solo"
+    },
+    {
+        "id": 80,
+        "name": "IoT Innovation Challenge 2025",
+        "venue": "Zoom (Online)",
+        "time": "04:06 PM, 28 July 2025",
+        "entryFee": "Free",
+        "type": "Team"
+    },
+    {
+        "id": 81,
+        "name": "AR/VR Hackathon 2025",
+        "venue": "Zoom (Online)",
+        "time": "04:06 PM, 28 November 2025",
+        "entryFee": "\u20b9200",
+        "type": "Team"
+    },
+    {
+        "id": 82,
+        "name": "Blockchain Basics 2025",
+        "venue": "Lab 5, CS Dept.",
+        "time": "04:06 PM, 08 July 2025",
+        "entryFee": "Free",
+        "type": "Team"
+    },
+    {
+        "id": 83,
+        "name": "Cloud Conference 2025",
+        "venue": "Google Meet",
+        "time": "04:06 PM, 04 July 2025",
+        "entryFee": "\u20b9200",
+        "type": "Team"
+    },
+    {
+        "id": 84,
+        "name": "Hackathon 2027",
+        "venue": "RCOEM Library",
+        "time": "04:06 PM, 22 October 2025",
+        "entryFee": "\u20b9300",
+        "type": "Team"
+    },
+    {
+        "id": 85,
+        "name": "Hackathon 2027",
+        "venue": "Open Ground, RCOEM",
+        "time": "04:06 PM, 24 November 2025",
+        "entryFee": "\u20b9200",
+        "type": "Solo"
+    },
+    {
+        "id": 86,
+        "name": "Cybersecurity Seminar 2025",
+        "venue": "RCOEM Library",
+        "time": "04:06 PM, 28 August 2025",
+        "entryFee": "\u20b9300",
+        "type": "Solo"
+    },
+    {
+        "id": 87,
+        "name": "Blockchain Basics 2026",
+        "venue": "Seminar Hall",
+        "time": "04:06 PM, 13 December 2025",
+        "entryFee": "\u20b9100",
+        "type": "Solo"
+    },
+    {
+        "id": 88,
+        "name": "Web Dev Bootcamp 2027",
+        "venue": "RCOEM Auditorium",
+        "time": "04:06 PM, 04 December 2025",
+        "entryFee": "\u20b9200",
+        "type": "Team"
+    },
+    {
+        "id": 89,
+        "name": "IoT Innovation Challenge 2027",
+        "venue": "Microsoft Teams",
+        "time": "04:06 PM, 16 March 2026",
+        "entryFee": "\u20b9200",
+        "type": "Solo"
+    },
+    {
+        "id": 90,
+        "name": "Blockchain Basics 2027",
+        "venue": "Seminar Hall",
+        "time": "04:06 PM, 09 May 2025",
+        "entryFee": "Free",
+        "type": "Solo"
+    },
+    {
+        "id": 91,
+        "name": "Blockchain Basics 2026",
+        "venue": "Innovation Hub",
+        "time": "04:06 PM, 21 May 2025",
+        "entryFee": "\u20b9100",
+        "type": "Team"
+    },
+    {
+        "id": 92,
+        "name": "Cloud Conference 2025",
+        "venue": "Auditorium Hall",
+        "time": "04:06 PM, 04 August 2025",
+        "entryFee": "Free",
+        "type": "Solo"
+    },
+    {
+        "id": 93,
+        "name": "Blockchain Basics 2025",
+        "venue": "Zoom (Online)",
+        "time": "04:06 PM, 23 June 2025",
+        "entryFee": "Free",
+        "type": "Team"
+    },
+    {
+        "id": 94,
+        "name": "Cloud Conference 2025",
+        "venue": "RCOEM Library",
+        "time": "04:06 PM, 19 September 2025",
+        "entryFee": "Free",
+        "type": "Team"
+    },
+    {
+        "id": 95,
+        "name": "Web Dev Bootcamp 2025",
+        "venue": "Zoom (Online)",
+        "time": "04:06 PM, 09 November 2025",
+        "entryFee": "\u20b9100",
+        "type": "Solo"
+    },
+    {
+        "id": 96,
+        "name": "IoT Innovation Challenge 2026",
+        "venue": "Lab 5, CS Dept.",
+        "time": "04:06 PM, 21 January 2026",
+        "entryFee": "Free",
+        "type": "Team"
+    },
+    {
+        "id": 97,
+        "name": "IoT Innovation Challenge 2026",
+        "venue": "Google Meet",
+        "time": "04:06 PM, 26 November 2025",
+        "entryFee": "\u20b9300",
+        "type": "Team"
+    },
+    {
+        "id": 98,
+        "name": "Hackathon 2026",
+        "venue": "Google Meet",
+        "time": "04:06 PM, 16 September 2025",
+        "entryFee": "\u20b9300",
+        "type": "Solo"
+    },
+    {
+        "id": 99,
+        "name": "UI/UX Design Workshop 2027",
+        "venue": "Innovation Hub",
+        "time": "04:06 PM, 09 March 2026",
+        "entryFee": "\u20b9300",
+        "type": "Solo"
+    },
+    {
+        "id": 100,
+        "name": "IoT Innovation Challenge 2026",
+        "venue": "Seminar Hall",
+        "time": "04:06 PM, 11 May 2025",
+        "entryFee": "Free",
+        "type": "Solo"
+    }
+]
