@@ -37,7 +37,8 @@ function UserDashboard({ user }) {
   return (
     <div className="dashboard-container">
       <div className="navbar">
-        <h2>🎉 Upcoming Events</h2>
+      <h2 className="upcoming-events">Upcoming Events</h2>
+
 
         {/* ✅ Search Bar */}
         <input
@@ -52,7 +53,7 @@ function UserDashboard({ user }) {
         <div className="user-info" onClick={() => setShowDropdown(!showDropdown)}>
           {user ? (
             <>
-              <span>{user.email}</span> {/* ✅ Show Email */}
+              <span>{user.email}</span> {/*  Show Email */}
               <span className="profile-icon">👤</span>
 
               {showDropdown && (
@@ -72,18 +73,17 @@ function UserDashboard({ user }) {
       <div className="event-list">
     {filteredEvents.length > 0 ? (
     filteredEvents.map((event, index) => (
-      <div className="event-card" key={index}>
+      <div key={index} className="event-card" >
         <h3>{event.name}</h3>
-        <p>📍 Venue: {event.venue}</p> {/* Change location to venue */}
-        <p>⏰ Date: {event.date}</p>
-        <p>💰 Entry Fee: {event.fee}</p>
-        <p>👥 Type: {event.type}</p>
-        <button
+        <p>📍  {event.venue}</p> {/* Change location to venue */}
+        <p>📅  Date {event.date}</p>
+        
+        <button className="register-btn"
           onClick={() =>
             window.open(event.registerLink, "_blank", "noopener,noreferrer")
           }
         >
-          ✅ Register Now
+          Register Now
         </button>
       </div>
     ))
