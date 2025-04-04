@@ -1,162 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #a4b8f9;
+}
+
 .auth-container {
   max-width: 400px;
   margin: 50px auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  border: 1px solid #8ba5f7;
 }
 
-input,
-select {
+.auth-container h1 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  color: #333;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+input, .role-select {
   width: 100%;
   padding: 12px;
-  margin: 10px 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #cfd9fb;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #333;
 }
 
 button {
   width: 100%;
   padding: 12px;
-  background-color: #4caf50;
   color: white;
   border: none;
-  border-radius: 5px;
-  margin-top: 10px;
+  border-radius: 8px;
+  margin-top: 15px;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
 }
 
-button:hover {
-  background-color: #45a049;
+.auth-btn {
+  background-color: #4286f5;
+  color: white;
 }
 
-/* Google Button */
+.auth-btn:hover {
+  background-color: #3b78e7;
+}
+
 .google-btn {
-  background-color: white;
-  color: #757575;
-  border: 1px solid #ccc;
+  width: 100%;
+  padding: 12px;
+  background-color: #fee9a0;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
 }
 
-.google-btn svg {
+.google-btn:hover {
+  background-color: #fde587;
+}
+
+.google-logo {
   width: 20px;
   height: 20px;
 }
-.dashboard-container {
-  text-align: center;
-  margin-top: 20px;
-}
-input {
-  padding: 10px;
-  width: 50%;
-  margin: 20px 0;
-  border-radius: 5px;
-}
-.events-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  padding: 20px;
-}
-.event-card {
-  border: 1px solid #ccc;
-  padding: 15px;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #f0f0f0;
-  border-bottom: 1px solid #ccc;
-}
-
-.user-profile {
-  position: relative;
-}
-
-.profile-btn {
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.dropdown-menu {
-  position: absolute;
-  top: 40px;
-  right: 0;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  overflow: hidden;
-  z-index: 10;
-}
-
-.dropdown-menu button {
-  width: 100%;
-  padding: 8px 12px;
-  background-color: white;
-  border: none;
-  border-bottom: 1px solid #ddd;
-  cursor: pointer;
-}
-
-.dropdown-menu button:hover {
-  background-color: #f1f1f1;
-}
-
-.auth-container {
-  width: 400px;
-  margin: 100px auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.auth-container h2 {
-  margin-bottom: 20px;
-  font-size: 24px;
+.role-select {
+  appearance: auto;
+  background-color: #cfd9fb;
   color: #333;
 }
 
-.auth-container input,
-.auth-container select,
-.auth-container button {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 6px;
+.login-text {
+  margin-top: 25px;
+  font-size: 14px;
 }
 
-.auth-container button {
-  background-color: #4caf50;
-  color: white;
+.login-link {
+  color: #4286f5;
+  text-decoration: none;
   cursor: pointer;
-}
-
-.auth-container button:hover {
-  background-color: #45a049;
-}
-
-.auth-container button[style*="none"] {
-  background: none;
-  color: blue;
-  text-decoration: underline;
-  cursor: pointer;
+  margin-left: 5px;
 }
