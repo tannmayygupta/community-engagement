@@ -4,6 +4,7 @@ import Auth from "./components/Auth";
 import UserDashboard from "./components/UserDashboard";
 import AdminDashboard from "./components/AdminDashboard";
 import Profile from "./components/Profile";
+import EventDetails from "./components/EventDetails";
 import "./App.css";
 
 function App() {

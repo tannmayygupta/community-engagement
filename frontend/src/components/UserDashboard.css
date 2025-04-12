@@ -33,7 +33,7 @@ body::before {
     text-align: center;
     display: flex;
     justify-content: space-between;
-    background: #f3ecec linear-gradient(135deg, #688af1, #e9ebed);
+    background: #f3ecec linear-gradient(135deg, #96a8e1, #e9ebed);
     padding: 10px 20px;
     color: rgb(155, 175, 228);
     /*border-radius: 8px;*/
