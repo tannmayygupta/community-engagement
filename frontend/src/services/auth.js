@@ -9,10 +9,8 @@ import {
 } from "firebase/auth";
 import { doc, setDoc, getDoc, getFirestore } from "firebase/firestore";
 
-// Firestore Instance
 const db = getFirestore();
 
-// Save User Data to Firestore ✅
 const saveUserToFirestore = async (user, role) => {
   try {
     await setDoc(doc(db, "users", user.uid), {
