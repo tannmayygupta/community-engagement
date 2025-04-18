@@ -4,7 +4,7 @@ import Auth from "./components/Auth";
 import UserDashboard from "./components/UserDashboard";
 import AdminDashboard from "./components/AdminDashboard";
 import Profile from "./components/Profile";
-import EventDetails from "./components/EventDetails";
+import EventDetails from "./components/EventDetails"; // ✅ Import
 import "./App.css";
 
 function App() {
@@ -14,23 +14,34 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* ✅ Passing setUser to Auth to save user details */}
+        {/* ✅ Auth */}
         <Route
           path="/"
           element={<Auth setRole={setRole} setUser={setUser} />}
         />
-        {/* ✅ Pass user data to UserDashboard & Profile */}
+
+        {/* ✅ User Dashboard */}
         <Route
           path="/user-dashboard"
           element={<UserDashboard user={user} />}
         />
+
+        {/* ✅ Admin Dashboard */}
         <Route
           path="/admin-dashboard"
           element={<AdminDashboard user={user} />}
         />
+
+        {/* ✅ Profile */}
         <Route
           path="/profile"
           element={<Profile user={user} />}
+        />
+
+        {/* ✅ Event Details Page */}
+        <Route
+          path="/event/:id"
+          element={<EventDetails />}
         />
       </Routes>
     </Router>

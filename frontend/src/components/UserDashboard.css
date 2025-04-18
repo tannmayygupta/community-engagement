@@ -126,7 +126,7 @@ body::before {
   
   .register-btn {
     display: inline-block; 
-    max-width: 170px; 
+    max-width: 200px; 
     background: linear-gradient(135deg, #849fca, #6692f0);
     color: white;
     padding: 10px 3px;
@@ -135,7 +135,7 @@ body::before {
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0px 0px 10px rgba(78, 2, 78, 0.7);
+    box-shadow: 0px 0px 10px rgba(125, 6, 125, 0.7);
 }
   
 .register-btn:hover {

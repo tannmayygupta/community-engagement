@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { db } from "../services/firebase"; // ✅ import db
+import { collection, onSnapshot, query, orderBy } from "firebase/firestore";
 import "./UserDashboard.css";
 
 function UserDashboard({ user }) {
@@ -8,28 +10,31 @@ function UserDashboard({ user }) {
   const [showDropdown, setShowDropdown] = useState(false);
   const navigate = useNavigate();
 
-  // ✅ Fetch Events from JSON
+  // ✅ Real-time Firestore Fetch
   useEffect(() => {
-    fetch("/events.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setEvents(data);
-      })
-      .catch((err) => console.error("Error fetching events:", err));
+    const q = query(collection(db, "events"), orderBy("timestamp", "desc")); // sort latest first
+
+    const unsubscribe = onSnapshot(q, (snapshot) => {
+      const eventsData = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      setEvents(eventsData);
+    });
+
+    return () => unsubscribe(); // Clean-up listener
   }, []);
 
   // ✅ Filtered Events
   const filteredEvents = events.filter((event) =>
-    event.name.toLowerCase().includes(searchQuery.toLowerCase())
+    event.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
-  // ✅ Handle Logout
   const handleLogout = () => {
     localStorage.removeItem("user");
     navigate("/");
   };
 
-  // ✅ Go to Profile Page
   const goToProfile = () => {
     navigate("/profile");
   };
@@ -37,8 +42,7 @@ function UserDashboard({ user }) {
   return (
     <div className="dashboard-container">
       <div className="navbar">
-      <h2 className="upcoming-events">Upcoming Events</h2>
-
+        <h2 className="upcoming-events">Upcoming Events</h2>
 
         {/* ✅ Search Bar */}
         <input
@@ -53,9 +57,8 @@ function UserDashboard({ user }) {
         <div className="user-info" onClick={() => setShowDropdown(!showDropdown)}>
           {user ? (
             <>
-              <span>{user.email}</span> {/*  Show Email */}
+              <span>{user.email}</span>
               <span className="profile-icon">👤</span>
-
               {showDropdown && (
                 <div className="dropdown">
                   <button onClick={goToProfile}>👀 View Profile</button>
@@ -71,27 +74,24 @@ function UserDashboard({ user }) {
 
       {/* ✅ Event Cards */}
       <div className="event-list">
-    {filteredEvents.length > 0 ? (
-    filteredEvents.map((event, index) => (
-      <div key={index} className="event-card" >
-        <h3>{event.name}</h3>
-        <p>📍  {event.venue}</p> {/* Change location to venue */}
-        <p>📅  Date {event.date}</p>
-        
-        <button className="register-btn"
-          onClick={() =>
-            window.open(event.registerLink, "_blank", "noopener,noreferrer")
-          }
-        >
-          Register Now
-        </button>
+        {filteredEvents.length > 0 ? (
+          filteredEvents.map((event) => (
+            <div key={event.id} className="event-card">
+              <h3>{event.title}</h3>
+              <p>📍 {event.location}</p>
+              <p>📅 Date: {event.date}</p>
+              <button
+                className="register-btn"
+                onClick={() => navigate(`/event/${event.id}`)}
+              >
+                Event Details
+              </button>
+            </div>
+          ))
+        ) : (
+          <p>No events found!</p>
+        )}
       </div>
-    ))
-  ) : (
-    <p>No events found!</p>
-  )}
-</div>
-
     </div>
   );
 }

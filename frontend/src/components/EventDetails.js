@@ -1,39 +1,51 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom"; 
+import React, { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../services/firebase";
+import "./EventDetails.css";
 
-function EventDetails() {
-  const { eventId } = useParams();
-  const [eventDetails, setEventDetails] = useState(null);
+const EventDetails = () => {
+  const { id } = useParams();
+  const [event, setEvent] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("/events.json")
-      .then((res) => res.json())
-      .then((data) => {
-        console.log("Fetched eventId: ", eventId); // Check eventId
-        const event = data.find((e) => e.id === parseInt(eventId)); 
-        console.log("Found event: ", event); 
-        if (event) {
-          setEventDetails(event); 
-        } else {
-          console.log("Event not found");
-        }
-      })
-      .catch((err) => console.error("Error fetching event details:", err));
-  }, [eventId]);
+    const fetchEvent = async () => {
+      const docRef = doc(db, "events", id);
+      const docSnap = await getDoc(docRef);
+      if (docSnap.exists()) {
+        setEvent(docSnap.data());
+      } else {
+        alert("Event not found");
+        navigate("/user-dashboard");
+      }
+    };
 
-  if (!eventDetails) return <p>Loading...</p>;
+    fetchEvent();
+  }, [id, navigate]);
+
+  if (!event) return <p>Loading event...</p>;
 
   return (
-    <div>
-      <h1>{eventDetails.name}</h1>
-      <p>{eventDetails.venue}</p>
-      <p>{eventDetails.time}</p>
-      <p>Entry Fee: {eventDetails.entryFee}</p>
-      <p>Type: {eventDetails.type}</p>
+    <div className="event-details-container">
+      <button className="back-btn" onClick={() => navigate("/user-dashboard")}>⬅ Back</button>
+      <h2>{event.title}</h2>
+      <p><strong>📍 Location:</strong> {event.location}</p>
+      <p><strong>📅 Date:</strong> {event.date}</p>
+      <p><strong>📝 Description:</strong> {event.description || "No description provided"}</p>
+
+      <button
+        className="register-now"
+        onClick={() =>
+          event.link
+            ? window.location.href = event.link
+            : alert("No registration link provided")
+        }
+      >
+        Register Now
+      </button>
     </div>
   );
-}
+};
 
 export default EventDetails;
-
-

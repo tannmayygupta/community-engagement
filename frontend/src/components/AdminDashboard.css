@@ -1,0 +1,88 @@
+/* AdminDashboard.css */
+
+.page {
+    background: linear-gradient(135deg, #688af1, #d1d7de);
+    min-height: 100vh;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .heading {
+    font-size: 28px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .logoutBtn {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .cardTitle {
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  .input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  .submitBtn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .eventItem {
+    background-color: #f1f1f1;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .deleteBtn {
+    background-color: #ff4d4f;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  

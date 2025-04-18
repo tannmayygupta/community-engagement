@@ -1,7 +1,11 @@
 // src/components/AdminDashboard.js
+
+import { db } from "../services/firebase";
+import { collection, addDoc } from "firebase/firestore";
 import React, { useState } from "react";
 import { logout } from "../services/auth";
 import { useNavigate } from "react-router-dom";
+import "./AdminDashboard.css"; // 🆕 CSS import
 
 function AdminDashboard() {
   const navigate = useNavigate();
@@ -11,6 +15,7 @@ function AdminDashboard() {
     description: "",
     date: "",
     location: "",
+    link: "",  // registration link added
   });
 
   const [events, setEvents] = useState([]);
@@ -25,28 +30,34 @@ function AdminDashboard() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-    const { title, description, date, location } = formData;
-
-    if (title && description && date && location) {
-      const newEvent = {
-        id: Date.now(),
-        title,
-        description,
-        date,
-        location,
-      };
-
-      setEvents((prev) => [...prev, newEvent]);
-      alert("✅ Event Added!");
-      setFormData({
-        title: "",
-        description: "",
-        date: "",
-        location: "",
-      });
+  
+    const { title, description, date, location, link } = formData;
+  
+    if (title && description && date && location && link) {
+      try {
+        await addDoc(collection(db, "events"), {
+          title,
+          description,
+          date,
+          location,
+          link, // store registration link
+          timestamp: new Date(), // for sorting later
+        });
+  
+        alert("✅ Event added to Firestore!");
+        setFormData({
+          title: "",
+          description: "",
+          date: "",
+          location: "",
+          link: "",  // reset the link input field
+        });
+      } catch (err) {
+        console.error("Error adding event: ", err);
+        alert("❌ Error adding event. Check console.");
+      }
     } else {
       alert("⚠️ Please fill all fields.");
     }
@@ -59,18 +70,19 @@ function AdminDashboard() {
   };
 
   return (
-    <div style={styles.page}>
-      <div style={styles.container}>
-      <div style={styles.card}>
-      <div style={styles.header}>
-        <h1 style={styles.heading}>👑 Admin Dashboard</h1>
-        <button onClick={handleLogout} style={styles.logoutBtn}>
-          Logout
-        </button>
-      </div>
-    </div>
-        <div style={styles.card}>
-          <h2 style={styles.cardTitle}>Add New Event</h2>
+    <div className="page">
+      <div className="container">
+        <div className="card">
+          <div className="header">
+            <h1 className="heading">👑 Admin Dashboard</h1>
+            <button onClick={handleLogout} className="logoutBtn">
+              Logout
+            </button>
+          </div>
+        </div>
+
+        <div className="card">
+          <h2 className="cardTitle">Add New Event</h2>
           <form onSubmit={handleSubmit}>
             <input
               type="text"
@@ -78,7 +90,7 @@ function AdminDashboard() {
               placeholder="Event Title"
               value={formData.title}
               onChange={handleChange}
-              style={styles.input}
+              className="input"
             />
             <input
               type="text"
@@ -86,14 +98,14 @@ function AdminDashboard() {
               placeholder="Event Description"
               value={formData.description}
               onChange={handleChange}
-              style={styles.input}
+              className="input"
             />
             <input
               type="date"
               name="date"
               value={formData.date}
               onChange={handleChange}
-              style={styles.input}
+              className="input"
             />
             <input
               type="text"
@@ -101,27 +113,36 @@ function AdminDashboard() {
               placeholder="Location"
               value={formData.location}
               onChange={handleChange}
-              style={styles.input}
+              className="input"
             />
-            <button type="submit" style={styles.submitBtn}>
+            <input
+              type="text"
+              name="link"
+              placeholder="Enter the Event Registration Link"
+              value={formData.link}
+              onChange={handleChange}
+              className="input"
+            />
+            <button type="submit" className="submitBtn">
               ➕ Add Event
             </button>
           </form>
         </div>
 
-        {/* {events.length > 0 && (
-          <div style={styles.card}>
-            <h2 style={styles.cardTitle}>📅 Event List</h2>
+        {/* Optional Event List section (uncomment if needed later)
+        {events.length > 0 && (
+          <div className="card">
+            <h2 className="cardTitle">📅 Event List</h2>
             <ul style={{ padding: 0, listStyle: "none" }}>
               {events.map((event) => (
-                <li key={event.id} style={styles.eventItem}>
+                <li key={event.id} className="eventItem">
                   <div>
                     <strong>{event.title}</strong> <br />
                     {event.description} <br />
                     <em>{event.date}</em> - {event.location}
                   </div>
                   <button
-                    style={styles.deleteBtn}
+                    className="deleteBtn"
                     onClick={() => handleDelete(event.id)}
                   >
                     ❌ Delete
@@ -135,83 +156,5 @@ function AdminDashboard() {
     </div>
   );
 }
-
-const styles = {
-  page: {
-    background: "linear-gradient(135deg, #688af1, #d1d7de)",
-    minHeight: "100vh",
-    padding: "40px 20px",
-    fontFamily: "Arial, sans-serif",
-  },
-  container: {
-    maxWidth: "600px",
-    margin: "0 auto",
-  },
-  header: {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    marginBottom: "30px",
-  },
-  heading: {
-    fontSize: "28px",
-    margin: 0,
-    color: "#333",
-  },
-  logoutBtn: {
-    backgroundColor: "#dc3545",
-    color: "#fff",
-    padding: "8px 14px",
-    border: "none",
-    borderRadius: "5px",
-    cursor: "pointer",
-  },
-  card: {
-    backgroundColor: "#fff",
-    padding: "25px",
-    borderRadius: "10px",
-    boxShadow: "0 0 15px rgba(0,0,0,0.1)",
-    marginBottom: "30px",
-  },
-  cardTitle: {
-    marginBottom: "20px",
-    color: "#007bff",
-  },
-  input: {
-    display: "block",
-    width: "100%",
-    padding: "10px",
-    marginBottom: "15px",
-    border: "1px solid #ccc",
-    borderRadius: "6px",
-    fontSize: "16px",
-  },
-  submitBtn: {
-    backgroundColor: "#28a745",
-    color: "#fff",
-    padding: "10px 16px",
-    border: "none",
-    borderRadius: "6px",
-    cursor: "pointer",
-    fontSize: "16px",
-  },
-  eventItem: {
-    backgroundColor: "#f1f1f1",
-    padding: "12px",
-    marginBottom: "12px",
-    borderRadius: "6px",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-  },
-  deleteBtn: {
-    backgroundColor: "#ff4d4f",
-    color: "#fff",
-    border: "none",
-    padding: "6px 10px",
-    borderRadius: "5px",
-    cursor: "pointer",
-  },
-};
 
 export default AdminDashboard;
