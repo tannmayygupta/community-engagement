@@ -24,7 +24,7 @@ function Profile({ user }) {
       {/* Header */}
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-2xl font-bold text-white">EventHub</h1>
+          <h1 className="text-2xl font-bold text-white">EveCon</h1>
           <div className="flex items-center space-x-2">
             <button 
               className="bg-gray-800 p-2 rounded-full text-gray-400 hover:text-white"
@@ -171,7 +171,7 @@ function Profile({ user }) {
 
         {/* Footer */}
         <div className="mt-8 text-center text-gray-500 text-sm">
-          <p>EventHub © 2025. All rights reserved.</p>
+          <p>EveCon © 2025. All rights reserved.</p>
         </div>
       </div>
     </div>

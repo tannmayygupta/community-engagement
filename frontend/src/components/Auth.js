@@ -108,7 +108,7 @@ function Auth({ setRole, setUser }) {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="text-4xl font-bold mb-4"
             >
-              EventHub
+              EveCon
             </motion.h1>
             <motion.p
               initial={{ y: 20, opacity: 0 }}
@@ -133,7 +133,7 @@ function Auth({ setRole, setUser }) {
                 {isSignUp ? "Create Account" : "Welcome Back"}
               </h2>
               <div className="text-indigo-500 text-sm font-medium">
-                EventHub
+                EveCon
               </div>
             </div>
 

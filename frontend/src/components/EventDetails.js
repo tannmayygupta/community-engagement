@@ -82,7 +82,7 @@ export default function EventDetails() {
               onClick={() => navigate("/user-dashboard")}
               className="text-lg font-bold cursor-pointer"
             >
-              EventHub
+              EveCon
             </motion.div>
             <nav className="hidden md:flex space-x-6">
               <button 

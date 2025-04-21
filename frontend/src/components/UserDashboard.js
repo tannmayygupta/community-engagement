@@ -110,7 +110,7 @@ function UserDashboard({ user }) {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                EventHub
+                EveCon
               </motion.h1>
             </div>
 
@@ -356,7 +356,7 @@ function UserDashboard({ user }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-bold text-white mb-4">EventHub</h3>
+              <h3 className="text-xl font-bold text-white mb-4">EveCon</h3>
               <p className="mb-4">
                 Connecting people through memorable experiences. Discover,
                 create, and share events that matter.
@@ -450,7 +450,7 @@ function UserDashboard({ user }) {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p>© 2025 EventHub. All rights reserved.</p>
+            <p>© 2025 EveCon. All rights reserved.</p>
             <div className="mt-4 md:mt-0 flex space-x-6">
               <button className="text-gray-400 hover:text-white">
                 Privacy Policy
